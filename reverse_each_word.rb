@@ -9,8 +9,9 @@ end
 
 def reverse_each_word(sentence)
   sentarray = sentence.split(/ /)
+  reverseArray = []
   sentarray.collect do | word |
-    word.reverse
+   reverseArray.push(word.reverse)
   end 
-  sentarray.join(" ")
+  reverseArray.join(" ")
 end 
